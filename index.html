@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I files .one</title>
+    <style>* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html, body {
+    padding-block-end: 0%;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    height: 100%;
+}
+body {
+    background-color: navy;
+}
+
+
+#wrap {
+    background-color: brown;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* header filho direto do wrap*/
+#wrap > header {
+background-color: beige;
+color: white;
+padding: 2rem;
+
+}
+#wrap>nav {
+            background-color: yellow;
+        }
+
+#wrap > main {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+        
+}
+
+#wrap > main > article {
+background-color: blueviolet;
+padding: 1rem;
+flex-grow: 1;
+
+}
+#wrap>main>aside {
+            background-color: blue;
+            padding: 1rem;
+        }
+
+ #wrap>footer {
+            background-color: red;
+ }
+
+
+ /* media queris*/
+
+  @media screen and (min-width: 768px) {
+        #wrap>main {
+                flex-direction: row;
+            }
+             #wrap>main>aside {
+                /* flex: 0 0 220px; */
+                flex-shrink: 0;
+                flex-basis: 220px;
+           
+            }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header>Cabeçalho</header>
+
+        <nav>
+            <a href="#Início"><span>Início</span></a>
+            <a href="#Lista"><span>Lista</span></a>
+            <a href="#Contato"><span>Contato</span></a>
+            <a href="#Sobre"><span>Sobre</span></a>
+        </nav>
+
+        <main>
+
+            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis obcaecati ab reiciendis
+                ipsum dolores delectus laborum minus non. Sunt velit ab eaque quam praesentium deleniti suscipit
+                blanditiis recusandae eius voluptate?
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores perspiciatis nobis impedit quas? Velit rem ipsam odio quas, fuga, ducimus dicta, reprehenderit animi eius placeat ab odit. A, quis maxime.</p></article>
+
+            &nbsp;
+
+
+            <aside>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum similique unde, nemo
+                necessitatibus ex expedita excepturi fugiat voluptate eveniet aliquid quod labore. Amet, debitis.
+                Commodi fugiat numquam molestiae ipsam sapiente.</aside>
+
+        </main>
+
+        <footer> rodape </footer>
+
+    </div>
+</body>
+
+</html>
