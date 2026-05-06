@@ -18,12 +18,12 @@ html, body {
     height: 100%;
 }
 body {
-    background-color: navy;
+    background-color: rgb(0, 0, 0);
 }
 
 
 #wrap {
-    background-color: brown;
+    background-color: rgb(0, 0, 0);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -32,17 +32,17 @@ body {
 
 /* header filho direto do wrap*/
 #wrap > header {
-background-color: beige;
-color: white;
+background-color: rgb(110, 117, 214);
+color: rgb(3, 3, 3);
 padding: 2rem;
 
 }
 #wrap>nav {
-            background-color: yellow;
+            background-color: rgb(0, 0, 0);
         }
 
 #wrap > main {
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -51,18 +51,18 @@ padding: 2rem;
 }
 
 #wrap > main > article {
-background-color: blueviolet;
+background-color: rgb(187, 93, 255);
 padding: 1rem;
 flex-grow: 1;
 
 }
 #wrap>main>aside {
-            background-color: blue;
+            background-color: rgb(83, 83, 255);
             padding: 1rem;
         }
 
  #wrap>footer {
-            background-color: red;
+            background-color: rgb(95, 89, 89);
  }
 
 
@@ -86,7 +86,16 @@ flex-grow: 1;
 
     <div id="wrap">
 
-        <header>Cabeçalho</header>
+        <header>
+            <a href="#inicio"><i class="fa-brands fa-web-awesome fa-fw"></i></a> 
+            <a href="#inicio">
+                <h1 style="display: flex;">
+                 <span> I files .one </span>
+                
+                </h1>
+
+
+        </header>
 
         <nav>
             <a href="#Início"><span>Início</span></a>
